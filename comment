@@ -1,0 +1,25 @@
+# git connection 
+echo "# movie-data" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/And-Drea/movie-data.git
+git push -u origin main
+
+# React and Vite
+# Create new Vite project with React
+npm create vite@latest . -- --template react
+# Install dependencies
+npm install
+
+# Core dependencies
+npm install react-router-dom @tanstack/react-query
+
+# UI icons (keeping for icons only)
+npm install @heroicons/react
+
+# Development dependencies
+npm install -D prettier eslint-config-prettier
+npm install -D vitest @testing-library/react @testing-library/jest-dom
+npm install -D @testing-library/user-event jsdom
